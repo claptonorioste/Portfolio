@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -9,60 +8,84 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiLinux,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiArduino,
+  SiMysql,
+  SiAppwrite,
+  SiCodeigniter,
+  SiTypescript,
+  SiPhp,
+  SiRedux,
+  SiDart,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { BiLogoFlutter, BiLogoFirebase } from "react-icons/bi";
+import { AiFillAndroid } from "react-icons/ai";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <BiLogoFlutter title="Flutter" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <DiJavascript1 title="Javascript" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <AiFillAndroid title="Android Studio" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <DiNodejs title="Node JS" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiReact title="React JS" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <BiLogoFirebase title="Firebase" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <DiMongodb title="Mongo DB" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiNextdotjs color="83edff" title="Next JS" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <DiGit title="GIT" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiAppwrite color="83edff" title="AppWrite" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiArduino title="Arduino" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiCodeigniter title="Codeigniter" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <DiPython title="Python" color="83edff" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <DiJava title="Java" color="83edff" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMysql title="Mysql" color="83edff" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript title="Typescript" color="83edff" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPhp title="PHP" color="83edff" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRedux title="Redux" color="83edff" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDart title="Dart" color="83edff" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiLinux title="Linux" color="83edff" />
       </Col>
     </Row>
   );

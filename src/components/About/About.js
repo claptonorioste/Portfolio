@@ -1,16 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -22,30 +20,70 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              ABOUT <strong className="purple">ME</strong>
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
         </Row>
+        <Container fluid className="home-about-section" id="about">
+          <Container>
+            <Row>
+              <Col md={12} className="home-about-social">
+                <p>
+                  Feel free to <span className="purple">connect </span>with me
+                </p>
+                <ul className="home-about-social-links">
+                  <li className="social-icons">
+                    <a
+                      href="https://github.com/claptonorioste"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour  home-social-icons"
+                    >
+                      <AiFillGithub />
+                    </a>
+                  </li>
+                  <li className="social-icons">
+                    <a
+                      href="https://www.facebook.com/clapton05"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour  home-social-icons"
+                    >
+                      <AiFillFacebook />
+                    </a>
+                  </li>
+                  <li className="social-icons">
+                    <a
+                      href="https://www.linkedin.com/in/christian-clapton-edison-orioste-b81bb3185"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour  home-social-icons"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                  <li className="social-icons">
+                    <a
+                      href="https://www.instagram.com/itsmeclapton_/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour home-social-icons"
+                    >
+                      <AiFillInstagram />
+                    </a>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+        <Github />
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Technology and <strong className="purple">Tools </strong>
         </h1>
 
         <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
       </Container>
     </Container>
   );

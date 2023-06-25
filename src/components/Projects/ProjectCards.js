@@ -9,30 +9,26 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title style={{ color: "#83edff" }}>{props.title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify", color: "#83edff" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
+        <Card.Text
+          style={{ textAlign: "justify", fontWeight: "bold", color: "#83edff" }}
+        >
+          {props.status}
+        </Card.Text>
+        {props.statusDescription ? (
+          <Card.Text
+            style={{
+              textAlign: "justify",
+              fontStyle: "italic",
+              color: "#83edff",
+            }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+            {props.statusDescription}
+          </Card.Text>
+        ) : null}
       </Card.Body>
     </Card>
   );
